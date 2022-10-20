@@ -1,0 +1,9 @@
+services:
+  server:
+    image: express-docker
+    ports:
+      - 5060:5000
+  mongodb:
+    image: mongo
+    volumes:
+      - ./data:/data/db
